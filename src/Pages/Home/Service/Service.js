@@ -11,7 +11,7 @@ const Service = ({ service }) => {
       <p>
         <small>{description}</small>
       </p>
-      <button>Book It</button>
+      <button className="btn btn-primary">Book It</button>
     </div>
   );
 };
