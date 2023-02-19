@@ -7,6 +7,7 @@ import Footer from "./Pages/Shared/Footer/Footer";
 import ServiceDetails from "./Pages/ServiceDtails/ServiceDetails";
 import NotFound from "./Pages/Shared/NotFound/NotFound";
 import SignIn from "./Pages/Login/SignIn/SignIn";
+import SignUp from "./Pages/Login/SignUp/SignUp";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         ></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/signin" element={<SignIn></SignIn>}></Route>
+        <Route path="/signup" element={<SignUp></SignUp>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

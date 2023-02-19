@@ -1,9 +1,15 @@
 import React, { useRef } from "react";
 import { Button, Form } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
   const emailRef = useRef("");
   const passwordRef = useRef("");
+  const navigate = useNavigate();
+
+  const navigateRegister = (event) => {
+    navigate("/signUp");
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -44,6 +50,12 @@ const SignIn = () => {
           Submit
         </Button>
       </Form>
+      <p>
+        Don't have account?{" "}
+        <span className="text-danger" onClick={navigateRegister}>
+          Please Register
+        </span>
+      </p>
     </div>
   );
 };
