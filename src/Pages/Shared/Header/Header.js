@@ -34,7 +34,7 @@ const Header = () => {
               <Nav.Link as={Link} to="/about">
                 About
               </Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
+              <Nav.Link as={Link} to="/signin">
                 Login
               </Nav.Link>
             </Nav>
