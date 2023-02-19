@@ -6,8 +6,10 @@ const SignIn = () => {
   const passwordRef = useRef("");
 
   const handleSubmit = (event) => {
-    event.preventDefualt();
+    event.preventDefault();
     const email = emailRef.current.value;
+    const password = passwordRef.current.value;
+    console.log(email, password);
   };
   return (
     <div className="container w-50 mx-auto">
