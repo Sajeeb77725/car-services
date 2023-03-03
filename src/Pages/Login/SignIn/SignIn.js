@@ -52,7 +52,11 @@ const SignIn = () => {
       </Form>
       <p>
         Don't have account?{" "}
-        <span className="text-danger" onClick={navigateRegister}>
+        <span
+          style={{ cursor: "pointer" }}
+          className="text-danger"
+          onClick={navigateRegister}
+        >
           Please Register
         </span>
       </p>
